@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<style>
+  .exit-intent-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 200px;
+    z-index: 1;
+    background: rgba(33, 33, 33, 0.8);
+    transform: translateY(60%) scale(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .newsletter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .exit-intent-popup.visible {
+    transform: translateY(0) scale(1);
+  }
+
+  .close {}
+
+  img {
+    max-width: 100%;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  figure {
+    width: 300px;
+    margin: 0;
+  }
+
+  article {
+    text-align: center;
+    width: 300px;
+    background: linear-gradient(45deg, transparent 0% 10%, darkred 10% 100%);
+    color: white;
+    margin-left: -1rem;
+  }
+</style>
+
+<body>
+
+  <div class="exit-intent-popup">
+    <div class="newsletter">
+      <b>Want to get updates to your mailbox? 📬</b>
+      <p>Subscribe to our newsletter!</p>
+      <input type="email" placeholder="Your email address" class="email" />
+      <button class="submit">Receive Newsletter</button>
+      <button class="close">x</button>
+    </div>
+  </div>
+
+  <div class="content" style="max-width: 600px; margin: 2rem auto; font-size: 1.4rem;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum natus provident veritatis impedit exercitationem laudantium possimus at optio minima, fuga, dignissimos aperiam. Nihil et recusandae assumenda dolores vitae.</p>
+  </div>
+
+  <button id="goBack">Go Back</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script src="./cookie.js"></script>
+</body>
+
+</html>
